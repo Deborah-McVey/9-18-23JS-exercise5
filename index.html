@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Output Text</title>
+</head>
+<body>
+    <input type="text" id="textInput" />
+    <p id="textDisplay"></p>
+    <script>
+    const inputText = document.querySelector('#textInput');
+    const outputText = document.querySelector('#textDisplay');
+
+    inputText.addEventListener('input', recordInput);
+
+    function recordInput() {
+    outputText.innerText = inputText.value;
+    }
+    </script>
+</body>
+</html>
+
+<!-- Exercise #5
+Objective: DOM Event Handling.
+
+Instructions:
+
+For the provided input element, add an event listener to log every keypress made by the user.
+Display the current content of the input in a separate paragraph below the input every time the user types. 
+Starting Code:
+
+<input type="text" id="textInput" />
+<p id="textDisplay"></p> -->
